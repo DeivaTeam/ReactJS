@@ -1,0 +1,37 @@
+<section class="hero-wrapper">
+    <div class="hero-text text-center">
+        <p class="subheading">{{subheading}}</p>
+        <p class="title">{{text}}</p>
+        <div class="subtitle show-for-medium">{{subtitle}}</div>
+    </div>
+    <div class="hero {{classes}}">
+        {{#ifequal classes 'has-image'}}
+        <div class="color-overlay"></div>
+        <div class="bg-image" data-interchange="[{{root}}assets/img/{{image}}-s.{{ext}}, small], [{{root}}assets/img/{{image}}-m.{{ext}}, medium], [{{root}}assets/img/{{image}}-l.{{ext}}, large]"></div>
+        {{/ifequal}}
+    </div>
+    {{#unlesspage 'Experience'}}
+            <div class="row">
+                    <div class="progress-indicator clearfix">
+                        {{#each buttons}}
+                            <div class="show-for-medium back-button">
+                                <a href="{{this.url}}" class="button primary {{this.class}}">{{this.text}}</a>
+                            </div>
+                         {{/each}}
+                        <div class="progress-wrapper clearfix">
+        
+                            {{#each progressIndicator}}
+                            <div class="indicator">
+                                <a href="{{this.url}}"
+                                   class="progress-btn clear float-left {{this.class}}">{{this.text}}</a>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+            </div>
+            {{#ifpage  'Results' 'OurGiftToYou'}}
+                <div class="row"><div class="subtitle show-for-small-only text-center columns small-10 small-centered">{{subtitle}}</div></div>
+            {{/ifpage}}
+        {{/unlesspage}}
+</section>
+

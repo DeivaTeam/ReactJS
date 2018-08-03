@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  text-align: center;
+
+  .svg-logo-white-dims {
+	height: rem-calc(44);
+
+  	@include breakpoint(medium) {
+  		height: rem-calc(61);
+  	}
+  }
+}
+
+.slogan {
+  color: white;
+  font-size: rem-calc(20);
+  line-height: normal;
+  font-weight: normal;
+  margin: rem-calc(24) 0;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(26);
+    line-height: normal;
+    margin: rem-calc(57) 0 rem-calc(67) 0;
+  }
+
+  @include breakpoint(large) {
+  	margin: rem-calc(65) 0;
+  	margin: rem-calc(60) 0 rem-calc(70) 0;
+  }
+}

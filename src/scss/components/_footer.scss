@@ -1,0 +1,36 @@
+footer {
+  background: $light-gray;
+  padding: rem-calc(20);
+  font-size: rem-calc(14);
+
+  @include breakpoint(medium) {
+    padding: 1rem;
+  }
+
+  p {
+    margin-bottom: 0.2rem;
+  }
+
+  a {
+    color: $dark-gray;
+
+    &.privacy-pol {
+      display: block;
+      text-align: right;
+
+      @include breakpoint(medium) {
+        text-align: left;
+      }
+    }
+  }
+
+  .copyright {
+    color: $medium-gray;
+  }
+
+  .row {
+    @include breakpoint(large){
+      padding: 0 rem-calc(24);
+    }
+  }
+}

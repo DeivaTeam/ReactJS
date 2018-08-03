@@ -1,0 +1,16 @@
+footer {
+  background: $light-gray;
+  padding: 0.5rem;
+
+  p{
+    margin-bottom: 0.2rem;
+  }
+  a {
+    color: $dark-gray;
+    font-size: rem-calc(12);
+  }
+  .copyright {
+    color: $medium-gray;
+    font-size: rem-calc(12);
+  }
+}

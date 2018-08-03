@@ -1,0 +1,40 @@
+'husband':
+  text: 'Husband'
+  img: 'screenshot1.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'wife':
+  text: 'Wife'
+  img: 'screenshot2.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'boyfriend':
+  text: 'Boyfriend'
+  img: 'screenshot3.jpg'
+  selected: 'selected'
+  url: '/WhereDoTheyLive.html'
+'girlfriend':
+  text: 'Girlfriend'
+  img: 'screenshot4.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'father':
+  text: 'Father'
+  img: 'screenshot5.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'mother':
+  text: 'Mother'
+  img: 'screenshot1.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'boy':
+  text: 'Boy'
+  img: 'screenshot2.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'
+'girl':
+  text: 'Girl'
+  img: 'screenshot3.jpg'
+  selected: ''
+  url: '/WhereDoTheyLive.html'

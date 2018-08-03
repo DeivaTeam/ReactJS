@@ -1,0 +1,78 @@
+.progress-indicator {
+  width: 100%;
+  z-index: 3;
+  border-bottom: $basic-border;
+  border-bottom-width: 2px;
+  margin-bottom: rem-calc(10);
+  position: relative;
+
+  .back-button {
+      position: absolute;
+      left: rem-calc(10);
+    }
+
+  .progress-wrapper { 
+    @include breakpoint(medium) {
+      width: calc(100% - 146px);
+      margin: 0 auto;
+    } 
+
+    @include breakpoint(large) {
+      width: 50%;
+    }
+  }
+
+  .indicator {
+    @include grid-column-gutter();
+    width: 20%;
+    float: left;
+    position: relative;
+
+    @include breakpoint(medium) {
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        bottom: 50%;
+        right: -4px;
+        width: 8px;
+        height: 8px;
+        margin: 0px 0px -5px -4px;
+        @include border-radius(100px);
+        background: $tint-grey;
+      }
+
+      &:last-child {
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  a.progress-btn {
+    color: $medium-grey;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+
+    &.active {
+      text-decoration: underline;
+      text-decoration-color: $red;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  @include breakpoint(medium) {
+    border-bottom: none;
+    margin-top: rem-calc(15);
+    margin-bottom: rem-calc(15);
+  }
+}

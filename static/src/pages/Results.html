@@ -1,0 +1,47 @@
+---
+heroText: 'Your Handpicked Gifts'
+heroSubheading: 'Gift Concierge'
+heroSubtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitut luctus ante vel urna malesuada, tincidunt vestibulum ligula porttitor.'
+heroImg: 'result-hero'
+image-ext: 'jpg'
+buttons: {
+    back: {
+        text: Back,
+        class: hollow,
+        url: OurGiftToYou.html
+    }
+}
+progressIndicator: {
+    Relationship: {
+        text: Relationship,
+        class: '',
+        url: '/WhoAreYouBuyingFor.html'
+    },
+    Location: {
+        text: Location,
+        class: '',
+        url: '/WhereDoTheyLive.html'
+    },
+    Personality: {
+        text: Personality,
+        class: '',
+        url: '/WhatTypeOfPersonAreThey.html'
+    },
+    Budget: {
+        text: Budget,
+        class: '',
+        url: '/WhatisYourPriceRange.html'
+    },
+    Gifts: {
+        text: Gifts,
+        class: active,
+        url: '/Results.html'
+    }
+}
+
+---
+
+{{> hero text=heroText subheading=heroSubheading subtitle=heroSubtitle image=heroImg ext=image-ext classes='has-image'}}
+{{> result_head }}
+{{> result_box classes='icon-boxes' images=results}}
+{{> actions buttons=buttons}}

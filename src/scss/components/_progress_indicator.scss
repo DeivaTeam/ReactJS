@@ -1,0 +1,83 @@
+.progress-indicator {
+  font-family: $body-font-family;
+  text-align: center;
+
+  .progress-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .indicator {
+    margin: 0 rem-calc(7);
+  }
+
+  a.progress-btn {
+    display: block;
+    cursor: not-allowed;
+    &.available {
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        .indicator-no {
+          background-color: white;
+          color: $pink-red;
+        }
+      }
+    }
+
+    .indicator-wrapper {
+      text-align: center;
+    }
+
+    .indicator-no {
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      display: block;
+      width: 26px;
+      height: 26px;
+      border: 1px solid white;
+      @include border-radius(50%);
+      margin: 0 auto 13px auto;
+      @include transition(all 0.2s ease);
+    }
+
+    .indicator-name {
+      color: white;
+      font-size: rem-calc(12);
+      line-height: normal;
+      font-weight: normal;
+      display: block;
+
+       @include breakpoint(medium) {
+        font-size: rem-calc(14);
+        min-width: rem-calc(54);
+      }
+    }
+  }
+
+ .indicator-separator {
+  position: relative;
+    display: block;
+    height: 0;
+    width: rem-calc(20);
+    border-top: 1px solid white;
+    @include translate(0, 11px);
+
+    @media screen and (min-width: 25rem) {
+      width: rem-calc(30);
+    }
+
+     @include breakpoint(medium) {
+      width: rem-calc(64);
+    }
+
+    @include breakpoint(large) {
+      width: rem-calc(100);
+    }
+  }
+}
+
+

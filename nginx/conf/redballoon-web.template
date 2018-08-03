@@ -1,0 +1,29 @@
+    server {
+        server_name ${NGINX_HOST};
+        listen ${NGINX_PORT};
+        root /var/www/html/web;
+        index index.html;
+
+        location /status {
+            return 200;
+        }
+    
+        location ~* \.(?:manifest|appcache|html?|xml|json)$ {
+            expires -1;
+        }
+
+        location ~* \.(?:css|js)$ {
+            try_files $uri =404;
+            expires 1y;
+            access_log off;
+            add_header Cache-Control "public";
+        }
+
+        location ~ ^.+\..+$ {
+            try_files $uri =404;
+        }
+
+        location / {
+            try_files $uri /giftguide/index.html;
+        }
+    }

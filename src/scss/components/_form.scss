@@ -1,0 +1,106 @@
+// Basic form styles
+// -----------------
+
+[type='text'], 
+[type='password'], 
+[type='date'], 
+[type='datetime'], 
+[type='datetime-local'], 
+[type='month'], 
+[type='week'], 
+[type='email'], 
+[type='number'], 
+[type='search'], 
+[type='tel'], 
+[type='time'], 
+[type='url'], 
+[type='color'] {
+  height: rem-calc(50);
+  border: 1px solid $faded-grey;
+  @include border-radius(4px);
+  box-shadow: none;
+  margin-bottom: rem-calc(10);
+
+  &:focus {
+    border: 1px solid $blue;
+    @include box-shadow(0, 0, 5px, $blue);
+  }
+
+  @include breakpoint(medium) {
+    height: rem-calc(60);
+  }
+}
+
+
+// Voucher form
+// ------------
+
+.voucher-form-wrapper {
+  padding: 0 rem-calc(24);
+  max-width: 100%;
+  margin: 0 auto;
+
+  .voucher-form {
+    padding: rem-calc(24) rem-calc(10) rem-calc(10) rem-calc(10);
+    @include box-shadow(0, 0, 6px, rgba(black, .21));
+
+    .rb-terms {
+      font-family: $body-font-family;
+      color: $blue;
+      font-size: rem-calc(12);
+      margin-bottom: 0;
+      padding: 0 rem-calc(5);
+
+      @include breakpoint(medium) {
+        padding: 0 rem-calc(10);
+      }
+
+      @include breakpoint(large) {
+        font-size: rem-calc(14);
+        padding: 0;
+      }
+    }
+
+    input[type="email"] {
+      border: 1px solid $blue;
+      padding: rem-calc(8) rem-calc(20);
+      
+      &:focus {
+        @include box-shadow(0, 0, 5px, $blue);
+      }
+
+      @include breakpoint(large) {
+        padding: rem-calc(8) rem-calc(30);
+      }
+    }
+
+    .button {
+      margin-bottom: rem-calc(10);
+      display: block;
+      width: 100%;
+
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(27);
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding: rem-calc(34) rem-calc(50) rem-calc(27) rem-calc(50);
+    }
+  }
+
+  @include breakpoint(medium) {
+    width: rem-calc(470);
+  }
+
+  @include breakpoint(large) {
+    width: rem-calc(1220);
+  }
+}
+
+
+
+
+
+
+

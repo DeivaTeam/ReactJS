@@ -1,0 +1,17 @@
+<div class="image-block-grid">
+    <div class="row large-up-4 small-up-2 {{classes}}"> 
+        {{#each images}}
+        <div class="image-block column">
+            <a href="{{this.url}}" class="{{this.selected}}">
+                <div class="color-overlay"></div>
+                {{#ifequal  this.img  ''}}
+                   <span></span>
+                {{else}}
+                <img src="{{root}}assets/img/{{this.img}}"/>
+                    {{/ifequal}}
+                <p class="text-center image-block-title">{{this.text}}</p>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>

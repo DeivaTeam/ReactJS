@@ -1,0 +1,20 @@
+'a':
+  text: '$0 - $50'
+  img: ''
+  selected: ''
+  url: 'OurGiftToYou.html'
+'b':
+  text: '$50 - $125'
+  img: ''
+  selected: ''
+  url: 'OurGiftToYou.html'
+'c':
+  text: '$125 - $250'
+  img: ''
+  selected: 'selected'
+  url: 'OurGiftToYou.html'
+'d':
+  text: '$250'
+  img: ''
+  selected: ''
+  url: 'OurGiftToYou.html'

@@ -1,0 +1,50 @@
+---
+heroText: 'Our Gift to you'
+heroSubheading: 'budget'
+heroSubtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitut luctus ante vel urna. Complete the details below to receive $10 off.'
+heroImg: 'result-hero'
+image-ext: 'jpg'
+buttons: {
+	back: {
+		text: back,
+		class: hollow,
+		url: WhatisYourPriceRange.html
+	},
+    next: {
+        text: next,
+        class: hollow show-for-small-only,
+        url: OurGiftToYou.html
+    }
+
+}
+progressIndicator: {
+    Relationship: {
+        text: Relationship,
+        class: '',
+        url: '/WhoAreYouBuyingFor.html'
+    },
+    Location: {
+        text: Location,
+        class: '',
+        url: '/WhereDoTheyLive.html'
+    },
+    Personality: {
+        text: Personality,
+        class: '',
+        url: '/WhatTypeOfPersonAreThey.html'
+    },
+    Budget: {
+        text: Budget,
+        class: active,
+        url: '/WhatisYourPriceRange.html'
+    },
+    Gifts: {
+        text: Gifts,
+        class: '',
+        url: '/Results.html'
+    }
+}
+---
+{{> hero text=heroText subheading=heroSubheading subtitle=heroSubtitle image=heroImg ext=image-ext classes='has-image'}}
+{{> voucher_form}}
+

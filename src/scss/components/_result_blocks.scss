@@ -1,0 +1,204 @@
+$rating-block-star-color: #F0C866;
+
+.result-block-grid {
+
+  .gift-boxes {
+    padding: 0 map_get($grid-column-gutter, small);
+    font-family: $body-font-family;
+
+    @include breakpoint(medium) {
+      padding: 0 rem-calc(12);
+      margin-bottom: rem-calc(30);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  .see-more-products {
+    margin-bottom: 50px;
+  }
+
+  .result-block {
+    padding-bottom: rem-calc(24);
+
+    @include breakpoint(medium) {
+      padding: 0 rem-calc(12) rem-calc(24) rem-calc(12);
+    }
+
+    @include breakpoint(large) {
+      padding: 0 rem-calc(12) rem-calc(34) rem-calc(12);
+    }
+  }
+
+  .result-block-title {
+    color: $black-grey;
+    margin-top: rem-calc(12);
+    font-size: rem-calc(14);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .result-block-subtitle {
+    color: $ash-grey;
+    font-size: rem-calc(14);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .result-block-see-more {
+    text-align: center;
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  img.banner {
+    width: 100%;
+    object-fit: cover;
+    @include border-radius(7px);
+
+    @include breakpoint(large) {
+      height: 27vh;
+    }
+  }
+
+  .info-bar {
+    .price {
+      color: $black;
+
+      span {
+        padding-right: 3px;
+      }
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: rem-calc(14);
+      display: inline-block;
+      margin-top: rem-calc(12);
+
+      @include breakpoint(large){
+        text-align: right;
+        display: block;
+      }
+    }
+  }
+}
+
+.rating-block {
+  img {
+    width: 13px;
+  }
+  label {
+    margin: 0;
+  }
+}
+
+// Gift Voucher
+// -------------
+
+.gift-voucher-wrapper {
+  background-color: white;
+  background: linear-gradient(to right, $gradient-blue-light, $gradient-blue-dark) no-repeat top;
+  background-size: 100% 75%;
+  color: white;
+  padding: map_get($grid-column-gutter, medium);
+  text-align: center;
+  margin-bottom: rem-calc(10);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(40);
+  }
+
+  h4 {
+    font-size: rem-calc(25);
+    margin: rem-calc(8) 0;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(29);
+    }
+
+    @include breakpoint(large) {
+      font-size: rem-calc(34);
+    }
+  }
+
+  p {
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(20);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(18);
+    }
+
+    @include breakpoint(large) {
+      font-size: rem-calc(21);
+    }
+  }
+
+  .gift-voucher-cta-wrapper {
+    display: block;
+    width: rem-calc(335);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $orange;
+    @include linear-gradient-b(left, $orange, $pink);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF574A, endColorstr=#F0507B);
+    @include border-radius(12px);
+    @include box-shadow(0, 3px, 4px, rgba(0, 0, 0, 0.2));
+    padding: rem-calc(20);
+    color: white;
+    transition: all 1s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 170px 0 0 rgba(0,0,0,0.2) inset;
+    }
+
+    .gift-voucher-name {
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: rem-calc(18);
+      margin-bottom: 0;
+    }
+
+    .gift-voucher-value {
+      font-size: rem-calc(63);
+      line-height: normal;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    .gift-voucher-cta {
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: rem-calc(5);
+      font-size: rem-calc(18);
+    }
+  }
+}
+
+.back-wrapper {
+  padding: 0 map_get($grid-column-gutter, medium);
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem-calc(23);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(40);
+    }
+  }
+}
+
+
+

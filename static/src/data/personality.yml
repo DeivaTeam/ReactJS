@@ -1,0 +1,30 @@
+'Adventurous':
+  text: 'Adventurous'
+  img: 'personality1.jpg'
+  selected: ''
+  url: '/WhatisYourPriceRange.html'
+'Breathtaking':
+  text: 'Breathtaking'
+  img: 'personality2.jpg'
+  selected: ''
+  url: '/WhatisYourPriceRange.html'
+'boyfriend':
+  text: 'Exhilirating'
+  img: 'personality3.jpg'
+  selected: 'selected'
+  url: '/WhatisYourPriceRange.html'
+'girlfriend':
+  text: 'Rejuvinating'
+  img: 'personality4.jpg'
+  selected: ''
+  url: '/WhatisYourPriceRange.html'
+'father':
+  text: 'Tantilising'
+  img: 'personality2.jpg'
+  selected: ''
+  url: '/WhatisYourPriceRange.html'
+'mother':
+  text: 'Thoughtful'
+  img: 'personality1.jpg'
+  selected: ''
+  url: '/WhatisYourPriceRange.html' 

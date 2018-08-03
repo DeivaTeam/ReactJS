@@ -1,0 +1,109 @@
+.rect-block-grid {
+  font-family: $body-font-family;
+
+  .row {
+    padding: 0 map_get($grid-column-gutter, small);
+
+    @include breakpoint(medium) {
+      padding: 0 0.75rem;
+    }
+  }
+
+  .rect-block-wrapper {
+    margin-bottom: map_get($grid-column-gutter, small);
+
+    @include breakpoint(medium) {
+      margin-bottom: 1.563rem;
+      padding: 0 0.75rem;
+    }
+    &.who-column-align {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 5px;
+
+      @include breakpoint(medium) {
+        max-width: 47%;
+        margin: 0 auto;
+        padding: 5px;
+      }
+      @include breakpoint(large) {
+        max-width: 30%;
+        margin: 0 auto;
+        padding: 5px;
+      }
+    }
+  }
+
+  .rect-block {
+    position: relative;
+    border: 1px solid $blue;
+    @include border-radius(4px);
+    background: transparent;
+    @include transition(background .2s ease);
+    height: 3.125rem;
+    padding: rem-calc(5);
+    display: table;
+    width: 100%;
+
+    @include breakpoint(medium) {
+      min-height: 3.75rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+    }
+
+    &.active {
+      background: $light-blue;
+      // Only show the hover background on non-touch devices. On touch devices the
+      // ':hover' is activated when touched, so it looks selected when it's not.
+      // @see below.
+    }
+
+    .rect-block-title {
+      margin: 0;
+      color: $blue;
+      font-size: rem-calc(14);
+      line-height: normal;
+      font-weight: normal;
+      display: table-cell;
+      vertical-align: middle;
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(18);
+      }
+    }
+  }
+
+  .proceed-button {
+    clear: both;
+    padding: 0 map_get($grid-column-gutter, small) / 2;
+
+    .button {
+      margin: rem-calc(23) auto;
+
+      @include breakpoint(medium) {
+        margin: rem-calc(47) auto;
+      }
+
+      @include breakpoint(large) {
+        margin: rem-calc(60) auto;
+      }
+    }
+  }
+}
+
+.no-touch {
+  .rect-block-grid {
+    .rect-block {
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        background: $light-blue;
+      }
+    }
+  }
+}

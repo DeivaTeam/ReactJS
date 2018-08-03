@@ -1,0 +1,77 @@
+<div class="result-block-grid">
+    <div class="row large-up-4 small-up-2 {{classes}}">
+        {{#each images}}
+        <div class="result-block column">
+            <div class="tags">
+                <div class="tag sale">{{this.sale}}</div>
+                <div class="tag exclusive">{{this.exclusive}}</div>
+            </div>
+            <a href="/Experience.html" class="{{this.selected}}">
+
+                <div class="image-container">
+                    <div class="color-overlay"></div>
+                    <img src="{{root}}assets/img/{{this.img}}"/>
+                    <div class="heart">
+                        <svg class="svg-heart-dims"><use xlink:href="assets/img/sprite.symbol.svg#heart"/></svg>
+                    </div>
+                    <div class="result-block-subtitle">
+                        {{this.subtitle}}
+                    </div>
+                </div>
+
+                <div class="info-bar row">
+                    <div class="columns small-12 large-8 info-left"><!--  start info left -->
+                        <div class="result-block-title">
+                            <p>{{this.text}}</p>
+                        </div>
+                        <div class="rating-block clearfix">
+
+                            <div class="star selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 40 37">
+                                    <polygon fill="none"
+                                             points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18"
+                                             transform="translate(-252)"/>
+                                </svg>
+                            </div>
+                            <div class="star selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 40 37">
+                                    <polygon fill="none"
+                                             points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18"
+                                             transform="translate(-252)"/>
+                                </svg>
+                            </div>
+                            <div class="star selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 40 37">
+                                    <polygon fill="none"
+                                             points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18"
+                                             transform="translate(-252)"/>
+                                </svg>
+                            </div>
+                            <div class="star selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 40 37">
+                                    <polygon fill="none"
+                                             points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18"
+                                             transform="translate(-252)"/>
+                                </svg>
+                            </div>
+                            <div class="star ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 40 37">
+                                    <polygon fill="none"
+                                             points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18"
+                                             transform="translate(-252)"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div><!-- end left -->
+
+                    <div class="columns small-12 large-4 info-right"><!-- start info right -->
+                        <div class="price">{{this.price}}</div>
+                        <div class="save">Save {{this.save}}</div>
+                    </div><!-- end right -->
+
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>

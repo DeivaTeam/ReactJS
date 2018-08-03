@@ -1,0 +1,35 @@
+.features {
+  text-align: center;
+
+  .features-title {
+    font-size: rem-calc(12);
+    color: $dark-gray;
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include breakpoint(medium) {
+    margin: 2rem 0;
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+    .features-title {
+      font-size: rem-calc(20);
+    }
+  }
+
+  @include breakpoint(large) {
+    svg {
+      width: 120px;
+      height: 120px;
+    }
+
+    .features-title {
+      font-size: rem-calc(24);
+    }
+  }
+}

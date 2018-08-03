@@ -1,0 +1,91 @@
+// 1. Sections
+// ------------
+
+
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -65px;
+  background: white;
+}
+
+.page-wrapper:after {
+  content: "";
+  display: block;
+}
+ 
+footer, .page-wrapper:after {
+  height: 65px;
+}
+
+i {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+// 2. Actions
+// ------------
+
+.actions {
+  margin: rem-calc(10) 0 rem-calc(20);
+
+  .button {
+    width: 100%;
+    margin-bottom:0;
+
+    @include breakpoint(medium) {
+      max-width: rem-calc(275);
+
+      &.hollow {
+        float: right;
+      }
+    }
+  }
+}
+
+// 3. Typography
+// ---------------
+
+.subheading {
+  text-transform: uppercase;
+  color: $dark-grey;
+  margin-bottom: 1rem;
+}
+
+h2,
+.h2,
+.title {
+  color: $black-grey;
+  font-size: rem-calc(36);
+  margin-bottom: 1.3rem;
+  margin-top: 1.3rem;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(48);
+    margin-bottom: 2.9rem;
+    margin-top: 2.9rem;
+  }
+}
+
+.subtitle {
+  color: $black-grey;
+  margin-bottom: 1.1rem;
+  font-size: rem-calc(24);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(30);
+  }
+}
+
+
+
+
+
+
+

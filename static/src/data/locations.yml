@@ -1,0 +1,40 @@
+'wales':
+  text: 'New South Wales'
+  img: 'location1.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'
+'victoria':
+  text: 'Victoria'
+  img: 'location2.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'
+'queensland':
+  text: 'Queensland'
+  img: 'location3.jpg'
+  selected: 'selected'
+  url: '/WhatTypeOfPersonAreThey.html'
+'south':
+  text: 'South Australia'
+  img: 'location1.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'
+'western':
+  text: 'Western Australia'
+  img: 'location2.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'
+'northen':
+    text: 'Northern Territory'
+    img: 'location3.jpg'
+    selected: ''
+    url: '/WhatTypeOfPersonAreThey.html'
+'capital':
+  text: 'Australian Capital Territory'
+  img: 'location3.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'
+'tasmania':
+  text: 'Tasmania'
+  img: 'location1.jpg'
+  selected: ''
+  url: '/WhatTypeOfPersonAreThey.html'

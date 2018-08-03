@@ -1,0 +1,45 @@
+---
+heroText: 'Pick three traits'
+heroSubheading: 'personality'
+heroSubtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitut luctus ante vel urna malesuada, tincidunt vestibulum ligula porttitor.'
+heroImg: 'result-hero'
+image-ext: 'jpg'
+buttons: {
+    back: {
+        text: Back,
+        class: hollow,
+        url: WhereDoTheyLive.html 
+    }
+}
+progressIndicator: {
+    Relationship: {
+        text: Relationship,
+        class: '',
+        url: '/WhoAreYouBuyingFor.html'
+    },
+    Location: {
+        text: Location,
+        class: '',
+        url: '/WhereDoTheyLive.html'
+    },
+    Personality: {
+        text: Personality,
+        class: 'active',
+        url: '/WhatTypeOfPersonAreThey.html'
+    },
+    Budget: {
+        text: Budget,
+        class: '',
+        url: '/WhatisYourPriceRange.html'
+    },
+    Gifts: {
+        text: Gifts,
+        class: '',
+        url: '/Results.html'
+    }
+} 
+---
+
+{{> hero text=heroText subheading=heroSubheading subtitle=heroSubtitle image=heroImg ext=image-ext classes='has-image'}}
+{{> image_box classes='icon-boxes' images=personality}}
+{{> actions buttons=buttons}}
