@@ -1,0 +1,10 @@
+${ENV_TYPE}-giftguide-nginx:
+    image: 271254370435.dkr.ecr.ap-southeast-2.amazonaws.com/giftguide-${ENV_TYPE}:${GIT_HASH}
+    cpu_shares: 128
+    mem_limit: 536870912
+    environment:
+        - NGINX_HOST=${HOST_NAME}
+        - NGINX_PORT=${CONTAINER_PORT}
+        - uri=${uri}
+    ports:
+        - "${CONTAINER_PORT}:${CONTAINER_PORT}"
